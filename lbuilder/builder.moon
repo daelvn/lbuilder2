@@ -139,12 +139,6 @@ groupal = {
     ->
       ix += 1
       return matchl[ix]
-  gfind: => (string) ->
-    en = 1
-    ->
-      st, en   = string\find @value, en
-      en       = en and (en + 1) or string\len!
-      return st, en-1
 }
 groupal.__index = groupal
 groupal.__call  = groupal.name   -- g "name"
@@ -154,7 +148,6 @@ groupal.__lt    = groupal.match  -- ml = g < "str"
 groupal.__le    = groupal.find   -- fl = g <= "str"
 groupal.__pow   = groupal.count  -- c  = g ^ "str"
 groupal.__len   = groupal.gmatch -- for match in #g
-groupal.__unm   = groupal.gfind  -- for xstart, xend in -g
 --
 groupal.__div  = (operand) =>
   switch type operand
@@ -230,7 +223,6 @@ atomic.compile    = => group element @
     count:   groupal.count
     atomize: groupal.atomize
     gmatch:  groupal.gmatch
-    gfind:   groupal.gfind
     -- Group
     :group
 }

@@ -10,22 +10,23 @@ describe "atoms", ->
   describe "literals", ->
     randomize false
     --
-    local la, lb, lc
     it "should define a literal", ->
       la = literal "a[x]%n(o).."
       --
       assert.are.equals "a%[x%]%%n%(o%)%.%.", (unwrap la)
       assert.are.equals "literal",            la.type
     it "should name a literal", ->
+      la = literal "a"
       la "Name"
       --
       assert.are.equals "Name", la.name
     it "should join two literals", ->
+      la = literal "ab"
       lb = literal "pl"
       --
       la + lb
       --
-      assert.are.equals "a%[x%]%%n%(o%)%.%.pl", (unwrap la)
+      assert.are.equals "abpl", (unwrap la)
     it "should match at least n literals", ->
       lc = literal "pl"
       --
@@ -68,22 +69,23 @@ describe "atoms", ->
   describe "normals", ->
     randomize false
     --
-    local na, nb, nc
     it "should define a normal", ->
       na = normal "a[x]%n(o).."
       --
       assert.are.equals "a[x]%n(o)..", (unwrap na)
       assert.are.equals "normal", na.type
     it "should name a normal", ->
+      na = normal "a"
       na "Name"
       --
       assert.are.equals "Name", na.name
     it "should join two normals", ->
+      na = normal "ab"
       nb = normal "pl"
       --
       na + nb
       --
-      assert.are.equals "a[x]%n(o)..pl", (unwrap na)
+      assert.are.equals "abpl", (unwrap na)
     it "should match at least n normals", ->
       nc = normal "pl"
       --
@@ -126,22 +128,23 @@ describe "atoms", ->
   describe "sets", ->
     randomize false
     --
-    local sa, sb, sc
     it "should define a set", ->
       sa = set "[abc%d]"
       --
       assert.are.equals "[abc%d]", (unwrap sa)
       assert.are.equals "set",     sa.type
     it "should name a set", ->
+      sa = set "[a]"
       sa "Name"
       --
       assert.are.equals sa.name, "Name"
     it "should join two sets", ->
+      sa = set "[a]"
       sb = set "[efg]"
       --
       sa + sb
       --
-      assert.are.equals "[abc%defg]", (unwrap sa)
+      assert.are.equals "[aefg]", (unwrap sa)
     it "should match at least n sets", ->
       sc = set "[ab]"
       --
@@ -190,12 +193,10 @@ describe "atoms", ->
 
 describe "elements", ->
   import element from builder.element
-  local ea, eb
+  la = builder.atom.literal "abc"
+  na = builder.atom.normal  "%ab"
+  sa = builder.atom.set     "[ab]"
   it "should define an element", ->
-    la = builder.atom.literal "abc"
-    na = builder.atom.normal  "%ab"
-    sa = builder.atom.set     "[ab]"
-    --
     ea = element la, na, sa
     --
     assert.are.equals "abc",     (unwrap ea.tree[1])
@@ -203,10 +204,12 @@ describe "elements", ->
     assert.are.equals "[ab]",    (unwrap ea.tree[3])
     assert.are.equals "element", ea.type
   it "should name an element", ->
+    ea = element la, na, sa
     ea "Name"
     --
     assert.are.equals "Name", ea.name
   it "should select an atom", ->
+    ea = element la, na, sa
     e2 = ea\select 2
     --
     assert.are.equals ea.tree[2], e2
@@ -214,12 +217,15 @@ describe "elements", ->
     fn = (atom) ->
       atom.value ..= "+"
       atom
+    --
+    ea = element la, na, sa
     ea * fn
     --
     assert.are.equals "abc+",  (unwrap ea\select 1)
     assert.are.equals "%ab+",  (unwrap ea\select 2)
     assert.are.equals "[ab]+", (unwrap ea\select 3)
   it "should transform an element", ->
+    ea = element la, na, sa
     (ea\transform 5), (a) -> a .. "+"
     --
     assert.are.equals "abc++",  (unwrap ea\select 1)
@@ -241,6 +247,7 @@ describe "elements", ->
     assert.are.equal "abc", (unwrap ec\select 1)
     assert.are.equal "abc", (unwrap ec\select 6)
   it "should compile into a group", ->
+    eb = element sa, na, la
     eb.factors.separator = "/"
     eb.factors.start     = "<"
     eb.factors.end       = ">"
@@ -251,29 +258,32 @@ describe "elements", ->
 
 describe "groups", ->
   import literal, normal, set from builder.atom
-  local ga, gb
   it "should define a group", ->
     ga = (literal "a")\compile!
     --
     assert.are.equal "a",     (unwrap ga)
     assert.are.equal "group", ga.type
   it "should name a group", ->
+    ga = (literal "a")\compile!
     ga "Name"
     --
     assert.are.equal "Name", ga.name
   it "should join two groups", ->
+    ga = (literal "a")\compile!
     gb = (literal "b")\compile!
     --
     ga + gb
     --
     assert.are.equal "ab", (unwrap ga)
   it "should test a group", ->
+    ga = (literal "a")\compile!
     stra = "ab"
     strb = "ac"
     --
     assert.is.truthy (ga % stra)
     assert.is.falsy  (ga % strb)
   it "should match a group", ->
+    ga = (literal "a")\compile!
     stra = "ab"
     strb = "ac"
     --
@@ -283,6 +293,7 @@ describe "groups", ->
     assert.are.equal "ab", mla[1]
     assert.is.falsy  mlb
   it "should find a group", ->
+    ga = (literal "a")\compile!
     stra = "xabx"
     strb = "xacx"
     --
@@ -293,6 +304,7 @@ describe "groups", ->
     assert.are.equal 3, (select 2, fla)
     assert.is.falsy flb
   it "should count a group", ->
+    ga = (literal "a")\compile!
     stra = "xabxabxabx"
     --
     assert.are.equal 3, (ga ^ stra)
@@ -302,12 +314,6 @@ describe "groups", ->
     --
     for match in (#gc) stra
       assert.is.truthy match\match "a."
-  it "should iterate over the group's finds", ->
-    gc   = (normal "a.")\compile!
-    stra = "abacadaea-f"
-    --
-    for fst, fix in (-gc) stra
-      assert.are.truthy fst, fix
   describe "replacements", ->
     it "should replace the group", ->
       ge  = (literal "o")\compile!
@@ -326,11 +332,11 @@ describe "groups", ->
       assert.are.equal "this is *{just}* a string", strr
     it "should replace the group with a limit", ->
       ge  = (normal "a.")\compile!
-      str = "ax_az_ay"
+      str = "ax_az_a"
       --
       strr = ge /str/"nn"/2
       --
-      assert.are.equal "nn_nn_ay", strr
+      assert.are.equal "nn_nn_a", strr
 
 describe "saves", ->
   import saved, save, get, element from builder
