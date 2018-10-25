@@ -324,7 +324,6 @@ describe "groups", ->
       assert.are.equal "hella", strr
     it "should replace the group with a function", ->
       ge  = (normal "%b{}")\compile!
-      print ge.value
       str = "this is {just} a string"
       --
       strr = ge /str/((x) -> "*"..x.."*")/true
@@ -339,15 +338,15 @@ describe "groups", ->
       assert.are.equal "nn_nn_a", strr
 
 describe "saves", ->
-  import saved, save, get, element from builder
-  import literal                   from builder.atom
+  import saved, save, get, whole from builder
+  import literal                 from builder.atom
   la = (literal "ab") "Ab"
   it "should save an element", ->
     save la
     --
     assert.are.equal saved.Ab, la
   it "should get a saved element", ->
-    lx = element "Ab"
+    lx = whole "Ab"
     --
     assert.are.equal la, lx
   it "should obtain the value of a saved element", ->

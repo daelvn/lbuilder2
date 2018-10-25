@@ -4,7 +4,6 @@
 
 commons = require "lbuilder.commons"
 
--- TODO FIX sets not combining properly
 -- TODO FIX non-compiling particles
 -- TODO FIX non-defining groups
 -- TODO FIX non-joining groups
@@ -18,21 +17,21 @@ any      = "*"
 optional = "?"
 
 -- Saves
-saved   = {}
-save    = (any)  -> saved[any.name] = any
-get     = (name) -> saved[name].tree and saved[name].tree or saved[name].value
-element = (name) -> saved[name]
+saved = {}
+save  = (any)  -> saved[any.name] = any if any
+get   = (name) -> saved[name] and (saved[name].tree and saved[name].tree or saved[name].value) or false
+whole = (name) -> saved[name] or false
 
 -- wrap, unwrap
 wrap    = (any) -> (value) -> if any.tree then any.tree = value else any.value = value
-unwrap  = (any) ->            any.tree and any.tree or any.value
+unwrap  = (any) ->            (any.tree and any.tree or any.value) if any
 
 -- atomic
 atomic = {
   name:    (name) => @name = name
   join:    (atom) => switch atom.type
     when "literal", "normal" then @value ..= atom.value
-    when "set" then @value = commons.join_sets @value atom.value
+    when "set" then @value = commons.join_sets @value, atom.value
   negate:  => @value = commons.negate_set @value
   repeat:  (operator) => switch type operator
     when "number" then
@@ -76,7 +75,7 @@ set = (string) ->
 
 -- atomic.combine, atomic.copy
 atomic.combine = (atom) => switch atom.type
-  when "set" then set commons.join_sets @value atom.value
+  when "set" then set commons.join_sets @value, atom.value
   else normal (@value .. atom.value)
 atomic.copy    = => switch @type
   when "literal" then literal @value
@@ -113,12 +112,21 @@ element = (...) ->
   }, elemental
 
 -- elemental.combine
--- TODO combine two table comprehensions
-elemental.combine = (e) => element
+elemental.combine = (e) =>
+  if e
+    ex      = element literal ""
+    ex.tree = commons.merge @tree, e.tree
+    return ex
+  return false
+
+elemental.__concat = elemental.combine
 
 -- atomic.toElement
-atomic.toElement = => with element @
-  \name @name
+atomic.toElement = =>
+  ex      = element @
+  ex.name = @name
+  ex
+
 atomic.__len = atomic.toElement
 
 -- groupal
@@ -188,7 +196,7 @@ atomic.compile    = => group element @
 
 -- Module
 {
-  :saved, :save, :get, :element
+  :saved, :save, :get, :whole
   :wrap, :unwrap
   :most, :least, :any, :optional
   atom:

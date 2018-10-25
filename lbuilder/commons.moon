@@ -55,7 +55,7 @@ copy  = (obj, seen) ->
   s[obj] = res
   for k, v in pairs obj do res[copy k, s] = copy v, s
   res
-merge = (table1) -> (table2) ->
+merge = (table1, table2) ->
   for k,v in pairs table2
     if ((type v) == "table") and ((type (table1[k] or false)) == "table")
       merge table1[k] table2[k]
@@ -65,7 +65,7 @@ add = (table1) -> (table2) ->
   for i,v in *table2
     table.insert table1, v
     
-join_sets  = (set1) -> (set2) -> "[" .. (set1\sub 2, -2) .. (set2\sub 2, -2) .. "]"
+join_sets  = (set1, set2) -> "[" .. (set1\sub 2, -2) .. (set2\sub 2, -2) .. "]"
 negate_set = (set) ->
   if     set\match "^%[^" then "["  .. set\sub 3
   elseif set\match "%]$"  then "[^" .. set\sub 2
