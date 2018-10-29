@@ -196,6 +196,7 @@ atomic.compile    = => group element @
 
 -- Module
 {
+  :debug
   :saved, :save, :get, :whole
   :wrap, :unwrap
   :most, :least, :any, :optional

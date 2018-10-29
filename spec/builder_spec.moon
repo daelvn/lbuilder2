@@ -192,10 +192,11 @@ describe "atoms", ->
       assert.are.equals "element", ec.type
 
 describe "elements", ->
-  import element from builder.element
-  la = builder.atom.literal "abc"
-  na = builder.atom.normal  "%ab"
-  sa = builder.atom.set     "[ab]"
+  import element              from builder.element
+  import literal, normal, set from builder.atom
+  la = literal "abc"
+  na = normal  "%ab"
+  sa = set     "[ab]"
   it "should define an element", ->
     ea = element la, na, sa
     --

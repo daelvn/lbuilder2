@@ -1,7 +1,8 @@
 -- lbuilder2 | parsec-rw module
 -- By daelvn
+commons = require "lbuilder.commons"
 import atom                from require "lbuilder.builder"
-import atomize, negate_set from require "lbuilder.commons"
+import atomize, negate_set from commons
 import Stream              from require "lbuilder.stream"
 
 local wrap
