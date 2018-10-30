@@ -3,8 +3,6 @@
 -- Pattern builder
 commons = require "lbuilder.commons"
 meta    = require "lbuilder.meta"
-utils   = require "lbuilder.utils"
-import is_set from utils
 
 -- Saves
 saved = {}
@@ -17,36 +15,35 @@ wrap    = (any) -> (value) -> if any.tree then any.tree = value else any.value =
 unwrap  = (any) ->            (any.tree and any.tree or any.value) if any
 
 -- Atoms
-local atom, generic, literal, normal, set
-atom = (a, name, type, b) ->
+_atom = (a, name, type) ->
   setmetatable {
     name:    name  or "?"
     type:    type  or "?"
     value:   a     or ""
-    builder: b     or atom
   }, meta.atom
-generic = (a, name, type) -> atom a,                    (name or ""), type,      generic
-literal = (a, name)       -> atom (commons.sanitize a), (name or ""), "literal", literal
-normal  = (a, name)       -> atom a,                    (name or ""), "normal",  normal
-set     = (a, name)       -> atom a,                    (name or ""), "set",     set
+_generic = (a, name, type) -> _atom a,                    (name or ""), type
+_literal = (a, name)       -> _atom (commons.sanitize a), (name or ""), "literal"
+_normal  = (a, name)       -> _atom a,                    (name or ""), "normal"
+_set     = (a, name)       -> _atom a,                    (name or ""), "set"
 
 -- element
-local element
-element = (...) ->
+_element = (...) ->
   setmetatable {
     name:    "?"
     type:    "element"
     tree:    [atom for i, atom in *{...}]
-    builder: element
+    --
+    builder:     element
   }, meta.element
 
 -- group
-local group
 group = (element) ->
   return setmetatable {
     name:    "?"
     type:    "group"
+    --
     builder: group
+    --
     value:   do
       _value = ""
       for i, atom in *element.tree
@@ -55,6 +52,63 @@ group = (element) ->
           else                _value ..= atom.value
       _value
   }, meta.group
+
+-- Atom for_builders
+local atom, generic, literal, normal, set, element
+atom    = (a, name, type) -> with _atom a, name, type
+  .builder     = atom
+  .for_atom    = atom
+  .for_generic = generic
+  .for_literal = literal
+  .for_normal  = normal
+  .for_set     = set
+  .for_element = element
+  .for_group   = group
+generic = (a, name, type) -> with _generic a, name, type
+  .builder     = generic
+  .for_atom    = atom
+  .for_generic = generic
+  .for_literal = literal
+  .for_normal  = normal
+  .for_set     = set
+  .for_element = element
+  .for_group   = group
+literal = (a, name)       -> with _literal a, name
+  .builder     = literal
+  .for_atom    = atom
+  .for_generic = generic
+  .for_literal = literal
+  .for_normal  = normal
+  .for_set     = set
+  .for_element = element
+  .for_group   = group
+normal  = (a, name)       -> with _normal  a, name
+  .builder     = normal
+  .for_atom    = atom
+  .for_generic = generic
+  .for_literal = literal
+  .for_normal  = normal
+  .for_set     = set
+  .for_element = element
+  .for_group   = group
+set     = (a, name)       -> with _set     a, name
+  .builder     = set
+  .for_atom    = atom
+  .for_generic = generic
+  .for_literal = literal
+  .for_normal  = normal
+  .for_set     = set
+  .for_element = element
+  .for_group   = group
+element = (...)           -> with _element ...
+  .builder     = element
+  .for_atom    = atom
+  .for_generic = generic
+  .for_literal = literal
+  .for_normal  = normal
+  .for_set     = set
+  .for_element = element
+  .for_group   = group
 
 -- Module
 {

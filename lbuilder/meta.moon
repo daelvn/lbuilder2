@@ -42,6 +42,7 @@ element = commons.multi {
   "__div,select":     (index)   =>        @tree[index]
   "__mul,apply":      (f)       =>        @tree = [f atom for i, atom in *@tree]
   "__mod,transform":  (index)   => (f) -> @tree[index].value = f @tree[index].value
+  "set_builder": (kind) => (f) -> @["for_#{kind}"] = f
   "compile":                    => if @for_group
     with @for_group @
       .name = @name
@@ -57,6 +58,7 @@ group = commons.multi {
   "__mod,test":   (s)     => s\match @value
   "__lt,match":   (s)     => [match for match in s\gmatch @value]
   "__pow,count":  (s)     => select 2, s\gsub @value, ""
+  "set_builder": (kind) => (f) -> @["for_#{kind}"] = f
   "__len,gmatch": (s)     =>
     matchl = [match for match in s\gmatch @value]
     ix     = 0

@@ -1,5 +1,4 @@
 -- lbuilder2 | Stream class
-
 class Stream
   new: (data="", pointer=0) =>
     @data    = data
