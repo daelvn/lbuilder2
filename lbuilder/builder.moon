@@ -21,7 +21,7 @@ _atom = (a, name, type) ->
     type:    type  or "?"
     value:   a     or ""
   }, meta.atom
-_generic = (a, name, type) -> _atom a,                    (name or ""), type
+_generic = (a, name, type) -> _atom a,                    (name or ""), (type or "generic")
 _literal = (a, name)       -> _atom (commons.sanitize a), (name or ""), "literal"
 _normal  = (a, name)       -> _atom a,                    (name or ""), "normal"
 _set     = (a, name)       -> _atom a,                    (name or ""), "set"
@@ -117,7 +117,7 @@ element = (...)           -> with _element ...
   -- Wrapping
   :wrap, :unwrap
   -- Atoms
-  :atom, :literal, :normal, :set
+  :atom, :generic, :literal, :normal, :set
   -- Element
   :element
   -- Groups
