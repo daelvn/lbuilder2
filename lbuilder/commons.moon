@@ -68,7 +68,7 @@ multi = (obj) ->
   target         = {}
   target.__index = target
   for k, v in pairs obj
-    for kk in k:gmatch "%P+"
+    for kk in k\gmatch "%P+"
       target[kk] = v
 
 -- Set operations
