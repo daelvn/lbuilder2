@@ -70,6 +70,7 @@ multi = (obj) ->
   for k, v in pairs obj
     for kk in k\gmatch "%P+"
       target[kk] = v
+  target
 
 -- Set operations
   
