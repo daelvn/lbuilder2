@@ -38,7 +38,7 @@ atom = commons.multi {
 
 element = commons.multi {
   "__call,label":     (name)    =>        @name = name
-  "__add,join":       (element) =>        @tree = commons.add @tree, element.tree
+  "__add,join":       (element) =>        @tree = commons.merge @tree, element.tree
   "__div,select":     (index)   =>        @tree[index]
   "__mul,apply":      (f)       =>        @tree = [f atom for i, atom in *@tree]
   "__mod,transform":  (index)   => (f) -> @tree[index].value = f @tree[index].value

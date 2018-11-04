@@ -62,8 +62,6 @@ merge = (table1, table2) ->
       merge table1[k] table2[k]
     else table1[k] = v
   table1
-add = (table1, table2) ->
-  for i,v in *table2 do table.insert table1, v
 multi = (obj) ->
   target         = {}
   target.__index = target
@@ -72,7 +70,5 @@ multi = (obj) ->
       target[kk] = v
   target
 
--- Set operations
-  
 -- Export
-{ :sanitize, :atomize, :negate_pattern, :copy, :merge, :add, :join_sets, :negate_set, :multi}
+{ :sanitize, :atomize, :negate_pattern, :copy, :merge, :join_sets, :negate_set, :multi}
