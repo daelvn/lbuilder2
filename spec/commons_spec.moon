@@ -1,6 +1,8 @@
 -- lbuilder | commons.moon testing
 -- By daelvn
 commons = require "lbuilder.commons"
+--dbg     = io.open "log.txt", "a+"
+
 
 -- Sanitizing
 describe "sanitizing", ->
@@ -63,7 +65,6 @@ describe "tables", ->
     }
     local tf
     tf = {
-      __index: tf
       x: "a"
       y: "a"
       z: "b"
@@ -76,3 +77,5 @@ describe "joining", ->
   import join_sets from commons
   it "joins two sets #join", ->
     assert.are_equal "[ab]", join_sets "[a]", "[b]"
+
+--dbg\close!

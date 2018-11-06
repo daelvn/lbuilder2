@@ -39,8 +39,10 @@ atomize = (pattern) ->
 
 -- Set operations
 negate_pattern = (pattern) ->
-  if   pattern\match "^[^" then result = table.concat [c         for c in pattern\gmatch "%[^(.)%]"]
-  else                          result = table.concat ["[^#{c}]" for c in pattern\gmatch "."       ]
+  local result
+  if   pattern\match "^%[^" then result = table.concat [c         for c in pattern\gmatch "%[^(.)%]"]
+  else                           result = table.concat ["[^#{c}]" for c in pattern\gmatch "."       ]
+  result
 join_sets  = (set1, set2) -> "[" .. (set1\sub 2, -2) .. (set2\sub 2, -2) .. "]"
 negate_set = (set) ->
   if     set\match "^%[^" then "["  .. set\sub 3
@@ -64,9 +66,8 @@ merge = (table1, table2) ->
   table1
 multi = (obj) ->
   target         = {}
-  target.__index = target
   for k, v in pairs obj
-    for kk in k\gmatch "%P+"
+    for kk in k\gmatch "[^,]+"
       target[kk] = v
   target
 

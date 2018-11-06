@@ -3,6 +3,7 @@
 -- Pattern builder
 commons = require "lbuilder.commons"
 meta    = require "lbuilder.meta"
+inspect = require "inspect"
 
 -- Saves
 saved = {}
@@ -32,8 +33,6 @@ _element = (...) ->
     name:    "?"
     type:    "element"
     tree:    [atom for i, atom in *{...}]
-    --
-    builder:     element
   }, meta.element
 
 -- group
@@ -41,9 +40,6 @@ group = (element) ->
   return setmetatable {
     name:    "?"
     type:    "group"
-    --
-    builder: group
-    --
     value:   do
       _value = ""
       for i, atom in *element.tree

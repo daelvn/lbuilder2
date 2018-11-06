@@ -1,6 +1,9 @@
 -- lbuilder2 | builder.moon tests
 builder = require "lbuilder.builder"
 utils   = require "lbuilder.utils"
+inspect = require "inspect"
+
+--db = io.open "log.txt", "a"
 
 import wrap, unwrap from builder
 
@@ -33,21 +36,49 @@ describe "atoms", ->
       l1 = literal "v"
       l2 = literal "n"
       assert.are_equal "vn", unwrap (l1 + l2)
-    it "repeats atoms #atom_repeat", -> pending TODO
-    it "repeats atoms with limit #atom_limit", -> pending TODO
-    it "modifies atoms #atom_modify", -> pending TODO
-    it "combines atoms #atom_combine", -> pending TODO
-    it "negates atoms #atom_negate", -> pending TODO
-    it "copies atoms #atom_copy", -> pending TODO
-    it "turns atoms into elements #atom_toelement", -> pending TODO
-    it "compiles atoms #atom_compile", -> pending TODO
+    it "repeats atoms #atom_repeat", ->
+      l = literal "v"
+      assert.are_equal "vvv", unwrap (l/3)
+    it "repeats atoms with limit #atom_limit", ->
+      l = literal "n"
+      assert.are_equal "nnn[^n]", unwrap (l/-3)
+    it "combines atoms #atom_combine", ->
+      lx  = literal "x"
+      ly  = literal "y"
+      lxy = lx .. ly
+      assert.are_equal "xy", unwrap lxy
+    it "negates atoms #atom_negate", ->
+      l = literal "ln"
+      assert.are_equal "[^l][^n]", unwrap -l
+    it "copies atoms #atom_copy", ->
+      l  = literal "l"
+      l2 = l\copy!
+      assert.are_same l, l2
+    it "turns atoms into elements #atom_toelement", ->
+      l = literal "l"
+      e = l\to_element!
+      assert.are_equal "l", unwrap e.tree[1]
+    it "compiles atoms #atom_compile", ->
+      l = literal "l"
+      g = l\compile!
+      assert.are_equal "l", unwrap g
 
 describe "elements", ->
-  import element from builder
-  it "defines an element #element", -> pending TODO
+  import atom, generic, literal, normal, set from builder
+  import element                             from builder
+  it "defines an element #element", ->
+    v  = literal "v"
+    n  = literal "n"
+    vn = element v, n
+    assert.are_equal "v", unwrap vn.tree[1]
+    assert.are_equal "n", unwrap vn.tree[2]
   
   describe "element operations", ->
-    it "names elements #element_label", -> pending TODO
+    it "names elements #element_label", ->
+      l = literal "l"
+      e = element l
+      e "Name"
+      assert.are_equal "Name", e.name
     it "applies a function to elements #element_apply", -> pending TODO
     it "selects an atom from elements #element_select", -> pending TODO
     it "transforms elements #element_transform", -> pending TODO
@@ -78,3 +109,5 @@ describe "saves", ->
   it "saves something #save", -> pending TODO
   it "gets the value of something saved #get", -> pending TODO
   it "fetches something saved #whole", -> pending TODO
+
+-- db\close!
