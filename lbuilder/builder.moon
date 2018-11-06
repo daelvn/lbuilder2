@@ -32,7 +32,7 @@ _element = (...) ->
   setmetatable {
     name:    "?"
     type:    "element"
-    tree:    [atom for i, atom in *{...}]
+    tree:    [atom for i, atom in pairs {...}]
   }, meta.element
 
 -- group
