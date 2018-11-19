@@ -1,5 +1,4 @@
 -- lbuilder2 | Commons
-
 -- String indexing
 (getmetatable '').__index = (i) =>
   if (type i) == "number"
@@ -8,8 +7,8 @@
     string[i]
 
 -- String operations
-sanitize = (pattern) -> pattern\gsub "[%(%)%.%%%+%-%*%?%[%]%^%$]", "%%%0"
-atomize = (pattern) ->
+sanitize = (pattern) -> pattern\gsub "[%(%)%.%%%+%-%*%?%[%]%^%$]", "%%%0" if pattern
+atomize  = (pattern) ->
   pattern = pattern\gsub "[()]", ""
   atom, atoms, open, i, mark  = "", {}, 0, 0, false
   for c in pattern\gmatch "."

@@ -2,8 +2,8 @@
 builder = require "lbuilder.builder"
 utils   = require "lbuilder.utils"
 inspect = require "inspect"
-
---db = io.open "log.txt", "a"
+log     = require "log"
+log.outfile = "builder_spec.txt"
 
 import wrap, unwrap from builder
 

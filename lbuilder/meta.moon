@@ -3,6 +3,8 @@
 -- Metatables for builder.moon
 commons = require "lbuilder.commons"
 utils   = require "lbuilder.utils"
+inspect = require "inspect"
+log     = require "log"
 import
   is_atom
   is_set
@@ -18,7 +20,7 @@ atom = commons.multi {
       else            @value ..= atom.value
     @
   "__unm,negate":           =>
-    switch atom.type
+    switch @type
       when "set" then @value   = commons.negate_set     @value
       else            @value   = commons.negate_pattern @value
     @
@@ -36,9 +38,11 @@ atom = commons.multi {
         @value ..= oper
     @
   "__concat,combine":  (atom) =>
+    --log.warn (@value .. atom.value)
+    --log.warn inspect @builder
+    --log.warn inspect @builder (@value .. atom.value)
     if (is_set @) and (is_set atom) then @builder common.join_sets @value, atom.value
     else                                 @builder (@value .. atom.value)
-    @
   "copy":                     =>
     @builder @value, @name, @type
   "__mod,set_builder": (kind) =>

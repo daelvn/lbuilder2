@@ -4,6 +4,7 @@
 commons = require "lbuilder.commons"
 meta    = require "lbuilder.meta"
 inspect = require "inspect"
+log     = require "log"
 
 -- Saves
 saved = {}
@@ -13,7 +14,7 @@ whole = (name) -> saved[name]       or false
 
 -- wrap, unwrap
 wrap    = (any) -> (value) -> if any.tree then any.tree = value else any.value = value
-unwrap  = (any) ->            (any.tree and any.tree or any.value) if any
+unwrap  = (any) ->            if (type any == "table") then (any.tree and any.tree or any.value) else any
 
 -- Atoms
 _atom = (a, name, type) ->
@@ -32,7 +33,7 @@ _element = (...) ->
   setmetatable {
     name:    "?"
     type:    "element"
-    tree:    [atom for i, atom in pairs {...}]
+    tree:    [atom for atom in *{...}]
   }, meta.element
 
 -- group
@@ -42,7 +43,7 @@ group = (element) ->
     type:    "group"
     value:   do
       _value = ""
-      for i, atom in *element.tree
+      for i, atom in pairs element.tree
         switch atom.type
           when "literal" then _value ..= commons.sanitize atom.value
           else                _value ..= atom.value
@@ -69,16 +70,18 @@ generic = (a, name, type) -> with _generic a, name, type
   .for_set     = set
   .for_element = element
   .for_group   = group
-literal = (a, name)       -> with _literal a, name
-  .builder     = literal
-  .for_atom    = atom
-  .for_generic = generic
-  .for_literal = literal
-  .for_normal  = normal
-  .for_set     = set
-  .for_element = element
-  .for_group   = group
-normal  = (a, name)       -> with _normal  a, name
+literal = (a, name) ->
+  log.debug inspect a
+  with _literal a, name
+    .builder     = literal
+    .for_atom    = atom
+    .for_generic = generic
+    .for_literal = literal
+    .for_normal  = normal
+    .for_set     = set
+    .for_element = element
+    .for_group   = group
+normal  = (a, name) -> with _normal a, name
   .builder     = normal
   .for_atom    = atom
   .for_generic = generic
@@ -87,7 +90,7 @@ normal  = (a, name)       -> with _normal  a, name
   .for_set     = set
   .for_element = element
   .for_group   = group
-set     = (a, name)       -> with _set     a, name
+set     = (a, name) -> with _set a, name
   .builder     = set
   .for_atom    = atom
   .for_generic = generic
@@ -96,7 +99,7 @@ set     = (a, name)       -> with _set     a, name
   .for_set     = set
   .for_element = element
   .for_group   = group
-element = (...)           -> with _element ...
+element = (...)  -> with _element ...
   .builder     = element
   .for_atom    = atom
   .for_generic = generic

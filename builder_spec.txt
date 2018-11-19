@@ -1,0 +1,1162 @@
+[DEBUG Mon Nov 19 18:21:55 2018] spec/builder_spec.moon:54: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:21:55 2018] spec/builder_spec.moon:55: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "y",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:25:39 2018] spec/builder_spec.moon:54: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:25:39 2018] spec/builder_spec.moon:55: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "y",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:26:13 2018] spec/builder_spec.moon:54: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:26:13 2018] spec/builder_spec.moon:55: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "y",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:36:46 2018] ./lbuilder/builder.moon:129: "x"
+[DEBUG Mon Nov 19 18:36:46 2018] ./lbuilder/builder.moon:129: "y"
+[DEBUG Mon Nov 19 18:36:46 2018] ./lbuilder/builder.moon:129: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:36:46 2018] ./lbuilder/builder.moon:129: "l"
+[DEBUG Mon Nov 19 18:36:46 2018] ./lbuilder/builder.moon:129: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:38:45 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:38:45 2018] ./lbuilder/builder.moon:131: "y"
+[DEBUG Mon Nov 19 18:38:45 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:38:45 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:38:45 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:39:52 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:39:52 2018] ./lbuilder/builder.moon:131: "y"
+[DEBUG Mon Nov 19 18:39:52 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:39:52 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:39:52 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "y"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:42:51 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "y"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:43:18 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "y"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:43:50 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 18:48:28 2018] ./lbuilder/meta.moon:49: xy
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:48:28 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 18:49:09 2018] ./lbuilder/meta.moon:49: xy
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:49:09 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 18:50:15 2018] ./lbuilder/meta.moon:50: xy
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:50:15 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 18:53:48 2018] ./lbuilder/meta.moon:50: xy
+[WARN  Mon Nov 19 18:53:48 2018] ./lbuilder/meta.moon:51: <function 1>
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 18:53:48 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 19:01:27 2018] ./lbuilder/meta.moon:50: xy
+[WARN  Mon Nov 19 19:01:27 2018] ./lbuilder/meta.moon:51: <function 1>
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:01:27 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 19:01:47 2018] ./lbuilder/meta.moon:50: xy
+[WARN  Mon Nov 19 19:01:47 2018] ./lbuilder/meta.moon:51: <function 1>
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:01:47 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "a"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "x"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "y"
+[WARN  Mon Nov 19 19:23:57 2018] ./lbuilder/meta.moon:50: xy
+[WARN  Mon Nov 19 19:23:57 2018] ./lbuilder/meta.moon:51: <function 1>
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "x",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "ln"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: {
+  builder = <function 1>,
+  for_atom = <function 2>,
+  for_element = <function 3>,
+  for_generic = <function 4>,
+  for_group = <function 5>,
+  for_literal = <function 1>,
+  for_normal = <function 6>,
+  for_set = <function 7>,
+  name = "",
+  type = "literal",
+  value = "l",
+  <metatable> = <1>{
+    __add = <function 8>,
+    __call = <function 9>,
+    __concat = <function 10>,
+    __div = <function 11>,
+    __index = <table 1>,
+    __len = <function 12>,
+    __mod = <function 13>,
+    __unm = <function 14>,
+    combine = <function 10>,
+    compile = <function 15>,
+    copy = <function 16>,
+    join = <function 8>,
+    label = <function 9>,
+    negate = <function 14>,
+    repeat = <function 11>,
+    set_builder = <function 13>,
+    to_element = <function 12>
+  }
+}
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "l"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "v"
+[DEBUG Mon Nov 19 19:23:57 2018] ./lbuilder/builder.moon:131: "n"
+[DEBUG Mon Nov 19 19:23:58 2018] ./lbuilder/builder.moon:131: "l"

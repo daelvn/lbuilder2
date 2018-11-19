@@ -1,0 +1,9 @@
+-- alfons: moon
+print ltext.title "lbuilder2"
+
+import immediate from require "lrunkit"
+
+export test = =>
+  print ltext.dart "Running tests..."
+  immediate "busted --defer-print -v --suppress-pending"
+
