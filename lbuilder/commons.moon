@@ -33,8 +33,7 @@ atomize  = (pattern) ->
       table.insert atoms, atom
       atom = ""
       mark = false
-  atoms = [atom for atom in *atoms when atom != ""]
-  atoms
+  [a for a in *atoms when a != ""]
 
 -- Set operations
 negate_pattern = (pattern) ->

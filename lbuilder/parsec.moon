@@ -1,9 +1,8 @@
 -- lbuilder2 | parsec-rw module
 -- By daelvn
 commons = require "lbuilder.commons"
-import atom                from require "lbuilder.builder"
-import atomize, negate_set from commons
-import Stream              from require "lbuilder.stream"
+import atom    from require "lbuilder.builder"
+import atomize from commons
 
 local wrap
 
@@ -136,10 +135,10 @@ radical_many = (process) -> (condition) -> (builder) -> wrap (input) ->
 -- Base radicals
 _chars    = (s) -> [char for char in s\gmatch "."]
 --
-char      = (char)    -> wrap (input) -> radical                ((r,b) -> r == b)    char    input
-charclass = (cclass)  -> wrap (input) -> radical                ((r,b) -> r\match b) cclass  input
-string    = (string)  -> wrap (input) -> radical_many (_chars)  ((r,b) -> r == b)    string  input
-pattern   = (pattern) -> wrap (input) -> radical_many (atomize) ((r,b) -> r\match b) pattern input
+char      = (char_)    -> wrap (input) -> radical                ((r,b) -> r == b)    char_    input
+charclass = (cclass)   -> wrap (input) -> radical                ((r,b) -> r\match b) cclass   input
+string    = (string_)  -> wrap (input) -> radical_many (_chars)  ((r,b) -> r == b)    string_  input
+pattern   = (pattern_) -> wrap (input) -> radical_many (atomize) ((r,b) -> r\match b) pattern_ input
 
 -- parser Derivate
 parser = (any) -> wrap (input) ->
@@ -180,14 +179,14 @@ one_of  = (set) -> (input) -> charclass (parser atom.set set)    input
 none_of = (set) -> (input) -> charclass (parser -(atom.set set)) input
 
 -- many, any
-_any = (choose) -> (parser, till) -> wrap (input) ->
+_any = (choose) -> (parser_, till) -> wrap (input) ->
   result = {}
-  read   = parser input
-  return (choose (cofail parser, read.expected, read.unexpected), "") if is_table read
+  read   = parser_ input
+  return (choose (cofail parser_, read.expected, read.unexpected), "") if is_table read
   --
   while is_string read
     table.insert result, read
-    read = parser input
+    read = parser_ input
   --
   if till
     readTill = till input
@@ -201,17 +200,17 @@ any  = _any (r, s) -> s
 many = _any (r, s) -> r
 
 -- count
-count = (number) -> (parser) -> wrap (input) ->
+count = (number) -> (parser_) -> wrap (input) ->
   result = {}
   for i=1, number
-    read = parser input
+    read = parser_ input
     switch type read
-      when "table"  then cofail parser, read.expected, read.unexpected
+      when "table"  then cofail parser_, read.expected, read.unexpected
       when "string" then table.insert result, read
   result
 
 -- till, choice, one
-till   = (parser) -> parser
+till   = (parser_) -> parser_
 choice = or_
 one    = xor_
 

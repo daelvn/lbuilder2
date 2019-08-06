@@ -6,7 +6,6 @@ utils   = require "lbuilder.utils"
 inspect = require "inspect"
 log     = require "log"
 import
-  is_atom
   is_set
   from utils
 
@@ -38,10 +37,10 @@ atom = commons.multi {
         @value ..= oper
     @
   "__concat,combine":  (atom) =>
-    --log.warn (@value .. atom.value)
-    --log.warn inspect @builder
-    --log.warn inspect @builder (@value .. atom.value)
-    if (is_set @) and (is_set atom) then @builder common.join_sets @value, atom.value
+    log.warn (@value .. atom.value)
+    log.warn inspect @builder
+    log.warn inspect @for_literal (@value .. atom.value)
+    if (is_set @) and (is_set atom) then @builder commons.join_sets @value, atom.value
     else                                 @builder (@value .. atom.value)
   "copy":                     =>
     @builder @value, @name, @type
@@ -63,7 +62,7 @@ element = commons.multi {
   "__div,select":     (index)   =>
     @tree[index]
   "__mul,apply":      (f)       =>
-    @tree = [f atom for i, atom in *@tree]
+    @tree = [f a for i, a in *@tree]
     @
   "__mod,transform":  (index)   =>
     (f) -> @tree[index].value = f @tree[index].value
